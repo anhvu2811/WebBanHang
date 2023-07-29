@@ -1,0 +1,38 @@
+﻿@model WebBanHang.Models.NhanVien
+@{
+    ViewBag.Title = "DangNhap";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<head>
+    <link href="~/Content/dangnhap.css" rel="stylesheet" />
+    <title>Đăng nhập</title>
+</head>
+<p style="color:red;">@ViewBag.Login</p>
+<div class="dangnhap">
+    @using (Html.BeginForm("Login", "Login"))
+    {
+        @Html.AntiForgeryToken()
+        <div class="row">
+            <div class="left">
+                <label>Tài khoản: </label>
+            </div>
+            <div class="right">
+                <input type="text" name="TaiKhoan" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="left">
+                <label>Mật khẩu:</label>
+            </div>
+            <div class="right">
+                <input type="password" name="Password" />
+            </div>
+        </div>
+        <div class="row">
+            <button value="submit">ĐĂNG NHẬP</button>
+        </div>
+
+    }
+</div>
+

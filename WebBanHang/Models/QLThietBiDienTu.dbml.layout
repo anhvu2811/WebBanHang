@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="QLThietBiDienTu">
+  <DataContextMoniker Name="/QLThietBiDienTuDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fff5573f-af16-450c-ba2f-139fc47cba01" absoluteBounds="3.5, 0.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QLThietBiDienTuDataContext/HangHoa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b1f73d5-7bb8-44ec-92bb-abda4700ca9e" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c19436c1-0cb7-45ca-9aeb-0c44c8f7e060" absoluteBounds="0.75, 1.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/QLThietBiDienTuDataContext/NhomHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc87501e-15e0-4711-b07d-c8fec4cbb163" absoluteBounds="0.765, 1.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5553b61a-65ca-471b-94c0-0acbe5fe9607" absoluteBounds="6.25, 1.125, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/QLThietBiDienTuDataContext/HoaDon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8a300a7-3e95-4565-8d4c-b4aa41ed0c34" absoluteBounds="6.265, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ca96aa92-d65a-4870-94b8-3a5e11f91fd0" absoluteBounds="3.5, 5.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QLThietBiDienTuDataContext/NhanVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76a4c9ce-da6c-4fe2-a420-4a0c2c767035" absoluteBounds="3.515, 5.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.97199625651042); (3.5 : 1.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLThietBiDienTuDataContext/NhomHang/NhomHang_HangHoa" />
+      <nodes>
+        <classShapeMoniker Id="c19436c1-0cb7-45ca-9aeb-0c44c8f7e060" />
+        <classShapeMoniker Id="fff5573f-af16-450c-ba2f-139fc47cba01" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.01044840494792); (6.25 : 2.01044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLThietBiDienTuDataContext/HangHoa/HangHoa_HoaDon" />
+      <nodes>
+        <classShapeMoniker Id="fff5573f-af16-450c-ba2f-139fc47cba01" />
+        <classShapeMoniker Id="5553b61a-65ca-471b-94c0-0acbe5fe9607" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.03929768880208); (7.25 : 6.03929768880208); (7.25 : 2.89589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLThietBiDienTuDataContext/NhanVien/NhanVien_HoaDon" />
+      <nodes>
+        <classShapeMoniker Id="ca96aa92-d65a-4870-94b8-3a5e11f91fd0" />
+        <classShapeMoniker Id="5553b61a-65ca-471b-94c0-0acbe5fe9607" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

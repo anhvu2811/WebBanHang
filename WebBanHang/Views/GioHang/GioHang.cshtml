@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "GioHang";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+@using WebBanHang.Models;
+@model List<GioHang>
+
+<head>
+    <link href="~/Content/giohang.css" rel="stylesheet" />
+    <title>Giỏ hàng</title>
+</head>
+<div class="giohang">
+    <h2>GIỎ HÀNG CỦA BẠN </h2>
+    <table class="table">
+        <tr>
+            <th scope="col">MÃ HÀNG HÓA</th>
+            <th scope="col">TÊN HÀNG HÓA</th>
+            <th scope="col">ẢNH BÌA</th>
+            <th scope="col">SỐ LƯỢNG</th>
+            <th scope="col">ĐƠN GIÁ</th>
+            <th scope="col">THÀNH TIỀN</th>
+            <td></td>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td width="12%" scope="row">@item.iMaHangHoa</td>
+                <td width="26%">@item.sTenHangHoa</td>
+                <td width="22%"><img src="~/Images/@item.sHinhAnh" style="width:50px; height:50px;"></td>
+                <td width="12%">@item.iSoLuong</td>
+                <td width="12">@string.Format("{0:0,0}", item.dGia)</td>
+                <td width="16%">@string.Format("{0:0,0}", item.dThanhTien)</td>
+                <td>
+                    <a href="@Url.Action("XoaGioHang", "GioHang", new { @ma = item.iMaHangHoa })">Xóa</a>
+                </td>
+            </tr>
+        }
+        <tr id="tongtien">
+            <td colspan="3">Tổng cộng:</td>
+            <td>@ViewBag.TongSoLuong</td>
+            <td> </td>
+            <td>@string.Format("{0:0,0}", ViewBag.TongThanhTien) VND</td>
+            <td></td>
+        </tr>
+    </table>
+    <button id="thanhtoan">Thanh Toán</button>
+</div>

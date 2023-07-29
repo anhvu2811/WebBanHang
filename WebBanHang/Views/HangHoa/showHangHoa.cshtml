@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+@using WebBanHang.Models;
+@model List<HangHoa>
+<head>
+    <link href="~/Content/card.css" rel="stylesheet" />
+    <title>Sản phẩm</title>
+</head>
+<body>
+    <div class="container">
+        @foreach (var item in Model)
+        {
+            <div class="card">
+                <div class="picture">
+                    <img src="@Url.Content("~/Images/" + item.HinhAnh)" />
+                </div> <br />
+                <a id="title" href="@Url.Action("XemChiTiet", new {@ma = item.MaHH})">@item.TenHH</a> <br />
+                <p id="price">Giá: @string.Format("{0:0,0}", @item.Gia) @item.DonViTinh</p>
+                <div class="buy">
+                    <a href="@Url.Action("ThemGioHang", "GioHang", new{@ma = item.MaHH, @strURL = Request.Url.ToString()})">
+                        <button type="submit">Thêm vào giỏ</button>
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</body>
+

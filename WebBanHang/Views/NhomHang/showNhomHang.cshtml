@@ -1,0 +1,19 @@
+﻿@using WebBanHang.Models;
+@{
+    Layout = null;
+}
+
+<head>
+    <link href="~/Content/menu-danhmuc.css" rel="stylesheet" />
+</head>
+
+<ul class="danhmuc" style="background-color:white">
+    <p id="tittle">DANH MỤC SẢN PHẨM</p>
+    @foreach (var item in Model)
+    {
+        <li>
+            <a href="@Url.Action("hanghoaTheoNhomHang", "NhomHang", new { @MaNhom = item.MaNhom })">@item.TenNhom</a>
+        </li>
+    }
+</ul>
+

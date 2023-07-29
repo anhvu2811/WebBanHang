@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "TrangChu";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<head>
+    <title>Trang chủ</title>
+    <link href="~/Content/trangchu.css" rel="stylesheet" />
+</head>
+<div class="trangchu">
+    <div class="banner">
+        <img class="mySlides" src="//bizweb.dktcdn.net/100/310/112/themes/845159/assets/slider_4.jpg?1670406871304" />
+        <img class="mySlides" src="//bizweb.dktcdn.net/100/310/112/themes/845159/assets/slider_3.jpg?1670406871304" />
+        <img class="mySlides" src="//bizweb.dktcdn.net/100/310/112/themes/845159/assets/slider_2.jpg?1670406871304" />
+        <img class="mySlides" src="//bizweb.dktcdn.net/100/310/112/collections/baner-new.jpg?v=1612413759037" />
+
+        <button class="image-button button-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="image-button button-right" onclick="plusDivs(1)">&#10095;</button>
+        <script src="~/Content/slideshow.js"></script>
+    </div>
+    <div class="sanpham">
+        <h2>Sản Phẩm Hot</h2>
+        @Html.Action("HangHoa_TrangChu", "HangHoa")
+    </div>
+    <div class=""></div>
+</div>
+

@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "LienHe";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<head>
+    <link href="~/Content/lienhe.css" rel="stylesheet" />
+    <title>Liên hệ</title>
+</head>
+<body>
+    <div class="container-thongtinthongtin">
+        <div class="thongtin">
+            <h3 id="lienhe">LIÊN HỆ</h3>
+            <h3>THÔNG TIN LIÊN HỆ</h3>
+            <ul>
+                <li>
+                    <span><i class="fa fa-map-marker"></i></span>
+                    <span>140 Lê Trọng Tấn, Quận Tân Phú, Thành phố Hồ Chí Minh, Việt Nam </span>
+                </li>
+                <li>
+                    <span><i class="fa fa-phone"></i></span>
+                    <p>
+                        <a href="#">+84 123 456 789</a>
+                        <br />
+                        <a href="#">+84 987 654 321</a>
+                    </p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope"></i></span>
+                    <p><a href="#">diachiemail@gmail.com</a></p>
+                </li>
+            </ul>
+            <hr />
+            <h3>GỬI THÔNG TIN LIÊN HỆ</h3>
+            <p>Xin vui lòng điền các yêu cầu vào mẫu dưới đây và gửi cho chúng tôi. Chúng tôi sẽ trả lời bạn ngay sau khi nhận được. Xin chân thành cảm ơn!</p>
+            <form class="guithongtin">
+                <label>Họ tên:</label><br />
+                <input type="text" placeholder="Nhập họ tên..." required /><br />
+
+                <label>Địa chỉ:</label><br />
+                <input type="text" placeholder="Nhập địa chỉ..." required /><br />
+
+                <label>Email:</label><br />
+                <input type="text" placeholder="Nhập Email..." required /><br />
+
+                <label>Điện thoại:</label><br />
+                <input type="text" placeholder="Nhập số điện thoại..." required /><br />
+
+                <label>Nội dung:</label><br />
+                <textarea></textarea><br />
+                <button class="btn btn-default" type="submit">Gửi</button>
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.067226816605!2d106.62646731531626!3d10.806163161597706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUaOG7sWMgcGjhuqltIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1670514394041!5m2!1svi!2s" width="600" height="450" style="border:0; margin-top:25px; margin-bottom:40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+

@@ -1,0 +1,37 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.danhmuc {
+    text-decoration: none;
+    background-color: white;
+}
+
+    .danhmuc #tittle {
+        padding: 20px 15px;
+        border: solid thin lightgray;
+        color: red;
+        font-weight: 500;
+        font-size: 25px;
+        text-align:center;
+    }
+
+    .danhmuc li {
+        list-style-type: none;
+        border: solid thin lightgray;
+        padding: 15px;
+        transition: transform 0.5s;
+    }
+
+        .danhmuc li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            margin-left:25px;
+        }
+
+        .danhmuc li:hover {
+            background-color: #fed700;
+            color:white;
+        }

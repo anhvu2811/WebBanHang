@@ -1,0 +1,62 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+table {
+    border: solid thin lightgray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    min-height: 600px;
+    min-width: 1000px;
+    padding: 20px;
+}
+
+    table #name {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    table td {
+        padding: 0px 49px;
+        font-weight: bold;
+    }
+
+    table #title {
+        color: black;
+        font-weight: bold;
+    }
+
+    table #price {
+        color: red;
+        font-weight: bold;
+    }
+
+    table #buy {
+        text-align: right;
+        margin-left: 40px;
+    }
+
+    table button {
+        padding: 10px 25px;
+        color: black;
+        border: solid thin #fed700;
+        border-radius: 20px;
+        background-color: #fed700;
+        margin-left: 20px;
+        text-align: center;
+        opacity: 0.7;
+        font-weight: bold;
+    }
+
+        table button:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+
+    table a {
+        text-decoration: none;
+        color: Black;
+    }

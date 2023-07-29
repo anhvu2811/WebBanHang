@@ -1,0 +1,35 @@
+﻿@model IEnumerable<WebBanHang.Models.HangHoa>
+@{
+    ViewBag.Title = "SearchSanPham";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/layoutpage.css" rel="stylesheet" />
+    <link href="~/Content/card.css" rel="stylesheet" />
+    <title>Sản phẩm</title>
+</head>
+<body>
+    <div class="container">
+        @foreach (var item in Model)
+        {
+            <div class="card">
+                <div class="picture">
+                    <img src="~/Images/@item.HinhAnh" />
+                </div><br />
+                <a id="title" href="@Url.Action("XemChiTiet", "HangHoa", new {@ma = item.MaHH})">@item.TenHH</a> <br />
+                <p id="price">Giá: @string.Format("{0:0,0}", @item.Gia) @item.DonViTinh</p>
+                <div class="buy">
+                    <a href="@Url.Action("ThemGioHang", "GioHang", new{@ma = item.MaHH, @strURL = Request.Url.ToString()})">
+                        <button type="submit">Thêm vào giỏ</button>
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</body>
+</html>
+

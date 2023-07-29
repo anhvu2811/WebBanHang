@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "XemChiTiet";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+}
+
+@using WebBanHang.Models;
+@model HangHoa
+<head>
+    <link href="~/Content/chitietsanpham.css" rel="stylesheet" />
+    <title>Chi tiết sản phẩm</title>
+</head>
+<table>
+    <tr>
+        <td colspan="3" id="name">CHI TIẾT SẢN PHẨM</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> <img src="@Url.Content("~/Images/" + Model.HinhAnh)" style="width:350px;height:300px" width="100%" /> </td>
+        <td>Tên sản phẩm: </td>
+        <td id="title">@Model.TenHH</td>
+    </tr>
+    <tr>
+        <td>Tên nhóm hàng:  </td>
+        <td>@Model.NhomHang.TenNhom</td>
+    </tr>
+    <tr>
+        <td>Nơi sản xuất:  </td>
+        <td>@Model.NoiSX</td>
+    </tr>
+    <tr>
+        <td>Giá bán:  </td>
+        <td id="price">@string.Format("{0:0,0}", @Model.Gia) @Model.DonViTinh</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="2" id="Buy">
+            <a href="@Url.Action("ThemGioHang", "GioHang", new{@ma = Model.MaHH, @strURL = Request.Url.ToString()})">
+                <button type="submit">THÊM VÀO GIỎ</button>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/"> <- Trở lại</a>
+        </td>
+    </tr>
+</table>
+

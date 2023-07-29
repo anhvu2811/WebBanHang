@@ -1,0 +1,72 @@
+﻿@model IEnumerable<WebBanHang.Models.HangHoa>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Hàng Hóa</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Mã hàng hóa
+        </th>
+        <th>
+            Tên hàng hóa
+        </th>
+        <th>
+            Hình ảnh
+        </th>
+        <th>
+            Giá
+        </th>
+        <th>
+            Đơn vị tính
+        </th>
+        <th>
+            Nơi sản xuất
+        </th>
+        <th>
+            Nhóm hàng
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaHH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenHH)
+            </td>
+            <td>
+                <img src="~/Images/@item.HinhAnh" style="width:90px; height:100px;" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DonViTinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoiSX)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NhomHang.TenNhom)
+            </td>
+            <td>
+                @Html.ActionLink("Chỉnh sửa", "Edit", new { id = item.MaHH }) |
+                @Html.ActionLink("Xem chi tiết", "Details", new { id = item.MaHH }) |
+                @Html.ActionLink("Xóa", "Delete", new { id = item.MaHH })
+            </td>
+        </tr>
+    }
+
+</table>
+@Html.ActionLink("Quay trở lại", "Index", "Admin")

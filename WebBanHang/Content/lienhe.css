@@ -1,0 +1,74 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+}
+.container-thongtinthongtin {
+    margin: auto;
+    width: 1200px;
+    background-color: white;
+}
+.thongtin{
+    margin-left:30px;
+    padding:10px 40px;
+}
+    .thongtin #lienhe {
+        text-align: center;
+        font-size: 40px;
+    }
+    .thongtin h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .thongtin ul {
+        text-decoration: none;
+        list-style-type: none;
+        margin-top: 10px;
+    }
+    .thongtin li {
+        display: flex;
+        margin-bottom: 16px;
+    }
+
+        .thongtin li span {
+            color:black;
+            padding-left: 10px;
+        }
+
+        .thongtin li p a {
+            color: black;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+.guithongtin {
+    margin-top: 20px;
+    width:470px;
+    float:left
+}
+    .guithongtin input{
+        margin-top:5px;
+        margin-bottom:10px;
+        width:300px;
+        padding:10px;
+    }
+    .guithongtin label{
+        font-weight:500;
+    }
+    .guithongtin textarea {
+        margin-top: 5px;
+        width: 320px;
+        height: 100px;
+    }
+    .guithongtin button {
+        padding: 7px 20px;
+        margin-top: 20px;
+        background-color: black;
+        border: solid thin black;
+        color: white;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+        .guithongtin button:hover {
+            background-color: #fed700;
+            border: solid thin #fed700;
+            cursor:pointer;
+        }

@@ -1,0 +1,59 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+}
+.tintuc {
+    margin: auto;
+    width: 1200px;
+    background-color: white;
+}
+.tintuc h3{
+    text-align:center;
+    font-size:40px;
+    padding:20px;
+}
+    .cot{
+        width:1200px;
+        min-height:830px;
+        float:left;
+        background-color:white;
+        margin-bottom:100px;
+    }
+        .cot .cactintuc {
+            margin-left: 30px;
+        }
+        .cot .row{
+            clear:both;
+            padding:20px 0;
+        }
+        .cot .trai{
+            width:230px;
+            float:left;
+        }
+            .cot .trai img {
+                -webkit-transition: all 2s ease;
+                -moz-transition: all 2s ease;
+                transition: all 0.5s ease;
+            }
+                .cot .trai img:hover {
+                    transform: scale(1.1);
+                }
+        .cot .phai {
+            width: 600px;
+            float: left;
+        }
+            .cot .phai a{
+                text-decoration:none;
+                color:black;
+            }
+                .cot .phai a:hover {
+                    color: #fed700;
+                }
+            .cot .phai .date {
+                font-style: italic;
+                margin-bottom: 10px;
+                color: #aaaaaa;
+                font-size: 13px;
+                margin-top: 5px;
+            }
+

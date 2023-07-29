@@ -1,0 +1,57 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.giohang {
+    background-color: white;
+    min-height: 850px;
+}
+
+    .giohang h2 {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .giohang table {
+        margin: auto;
+        border-collapse: collapse;
+    }
+        .giohang table td {
+            text-align: center;
+            border: 1px solid lightgray;
+            padding:20px;
+        }
+        .giohang table th {
+            text-align: center;
+            border: 1px solid lightgray;
+            padding: 20px;
+        }
+         .giohang table td a{
+             text-decoration:none;
+             color:black;
+         }
+            .giohang table td a:hover {
+                color: #fed700
+            }
+    .giohang #tongtien {
+        color: red;
+        font-weight: bold;
+    }
+    .giohang button {
+        float: right;
+        margin-right: 18%;
+        margin-top: 30px;
+        border: solid thin red;
+        background-color: red;
+        padding: 10px 30px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+        .giohang button:hover {
+            border: solid thin Crimson;
+            background-color: Crimson;
+            cursor: pointer
+        }
